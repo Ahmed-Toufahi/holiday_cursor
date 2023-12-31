@@ -1,0 +1,26 @@
+{
+    "name": "Holiday Cursor",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "An extension that brings holiday touch to your cursor: Christmas trees, bells, and gifts elegantly descend, adding a refined festive flair to your digital experience.",
+    "icons": {
+        "128": "icons/icon2.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "style.css"
+            ],
+            "js":[
+                "content.js",
+                "font.js"
+            ]
+        }
+    ]
+}
